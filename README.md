@@ -1,5 +1,4 @@
 # My Custom Plugin Boilerplate
-___
 
 ## How to Setup for use
 1. Step one
