@@ -14,6 +14,8 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+// require_once plugin_dir_path(__FILE__) . 'includes/class-custom-plugin.php';
+
 function run_custom_plugin() {
 
 	$plugin = new Custom_Plugin();
