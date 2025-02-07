@@ -28,5 +28,6 @@ Future improvements and features to be added:
 
 ## Recent Changes
 
-**[6th February 2025]** - Initial commit with the first set of files uploaded to provide a starting point for further development.
-**[7th February 2025]** - Add script-loading for CSS and JavaScript and database functionality.
+- **[6th February 2025]** - Initial commit with the first set of files uploaded to provide a starting point for further development.
+
+- **[7th February 2025]** - Add script-loading for CSS and JavaScript and database functionality.
