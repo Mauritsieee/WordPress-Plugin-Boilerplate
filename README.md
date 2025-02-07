@@ -9,9 +9,12 @@ To get started with the plugin, follow these steps:
 2. Rename the following files to reflect the new plugin name:
     - `custom-plugin` (root folder)
     - `custom-plugin.php`
-3. Perform a "Find and Replace" across all files for the following terms:
-    - `custom-plugin` → Replace with your new plugin name.
-    - `CustomPlugin` → Replace with your new plugin's class name.
+3. Perform a "Find and Replace" across all files, making sure to maintain the syntax structure:
+    - `CustomPlugin` 
+    - `custom-plugin`
+    - `Custom-Plugin`
+    - `Custom_Plugin`
+    - `custom_plugin`
 
 ---
 
@@ -19,13 +22,11 @@ To get started with the plugin, follow these steps:
 
 Future improvements and features to be added:
 
-4. Implement database handling for data storage and retrieval.
-5. Set up version management to keep track of plugin versions.
-6. Add functionality for script loading (e.g., JavaScript or CSS files).
-7. Include detailed comments throughout the files for better code understanding and maintenance.
+1. Include detailed comments throughout the files for better code understanding and maintenance.
 
 ---
 
 ## Recent Changes
 
 **[6th February 2025]** - Initial commit with the first set of files uploaded to provide a starting point for further development.
+**[7th February 2025]** - Add script-loading for CSS and JavaScript and database functionality.
