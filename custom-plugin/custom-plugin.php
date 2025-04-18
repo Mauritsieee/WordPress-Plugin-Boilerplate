@@ -16,7 +16,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 // Require the main plugin class
-require_once plugin_dir_path(__FILE__) . 'includes/class-custom-plugin.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-starter.php';
 
 function run_custom_plugin() {
     $custom_plugin = new CustomPlugin();
