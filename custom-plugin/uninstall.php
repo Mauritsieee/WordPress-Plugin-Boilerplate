@@ -1,10 +1,17 @@
 <?php
 
-// If uninstall not called from WordPress, then exit.
-if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
-	exit;
-}
+// ================================================
+// If uninstall was not called by WordPress, exit.
+// ================================================
 
+// ================================================
+// 
+// ================================================
+
+if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) exit;
+
+
+namespace CustomPlugin;
 
 class Uninstall_CustomPlugin {
 
