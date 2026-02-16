@@ -1,37 +1,90 @@
+# Custom WordPress Plugin Boilerplate
 
-This is a boilerplate for a custom WordPress plugin, currently in its initial development phase. This framework provides the foundation to build upon and customize for your specific plugin needs.
-
-## Setup Instructions
-
-To get started with the plugin, follow these steps:
-
-1. Download the root folder (named `custom-plugin`).
-2. Rename the following files to reflect the new plugin name:
-    - `custom-plugin` (root folder)
-    - `custom-plugin.php`
-3. Perform a "Find and Replace" across all files, making sure to maintain the syntax structure:
-    - `custom_plugin` 
-    - `CustomPlugin`
-    - `custom-plugin`
-    - `CUSTOMPLUGIN`
+A clean and structured boilerplate for building custom WordPress plugins.  
+Designed to be lightweight, scalable, and easy to extend.
 
 ---
 
+## 📦 File Structure
 
-## To-Do List
-
-Future improvements and features to be added:
-
-1. Adding Ajax integrated functionality
+    custom-plugin/
+    │
+    ├── custom-plugin.php
+    ├── uninstall.php
+    │
+    ├── assets/
+    │   ├── css/
+    │   │   ├── public.css
+    │   │   └── admin.css
+    │   └── js/
+    │       ├── public.js
+    │       └── admin.js
+    │
+    └── inc/
+        ├── Core/
+        │   ├── class-starter.php
+        │   ├── class-script-loader.php
+        │   └── class-db.php
+        │
+        ├── Helpers/
+        │   └── class-load-helpers.php
+        │
+        └── Features/
+            └── custom-feature.php
 
 ---
 
-## Recent Changes
+## 🚀 Getting Started
 
-- **[6th February 2025]**   - Initial commit with the first set of files uploaded to provide a starting point for further development.
+1. Download the root folder (`custom-plugin`).
+2. Rename:
+   - `custom-plugin` (root folder)
+   - `custom-plugin.php`
+3. Perform a global **Find & Replace** (preserve casing and structure):
 
-- **[7th February 2025]**   - Add script-loading for CSS and JavaScript and database functionality.
+       custom_plugin
+       CustomPlugin
+       custom-plugin
+       CUSTOMPLUGIN
 
-- **[18th April 2025]**     - Changing file structure and code to make the installing way easier
+4. Start adding your functionality inside:
 
-- **[9th September 2025]**  - Adding namespaces, jQuery on front- and back-end scripts. Including more detailed and structured classes
+       inc/Features/
+
+---
+
+## 🧩 What’s Included
+
+- Structured bootstrap system
+- Core / Features separation
+- Script & style loader (frontend + admin)
+- Database setup with version handling
+- Clean uninstall procedure
+- Namespaced architecture
+- Version-based asset cache busting
+
+---
+
+## 📝 To-Do
+
+- Add Ajax-integrated functionality
+- Expand example feature modules
+
+---
+
+## 🔄 Recent Changes
+
+- **[6 February 2025]**  
+  Initial commit with base boilerplate structure.
+
+- **[7 February 2025]**  
+  Added script loading (CSS/JS) and database functionality.
+
+- **[18 April 2025]**  
+  Refactored file structure for easier setup and cleaner organization.
+
+- **[9 September 2025]**  
+  Added namespaces, structured classes, and improved script handling.
+
+- **[16 February 2026]**  
+  Major structural refinement: separated Core and Features architecture, implemented database versioning, automatic plugin version detection, improved asset handling, and finalized a clean, production-ready boilerplate foundation.

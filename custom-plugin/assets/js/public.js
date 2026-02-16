@@ -1,7 +1,7 @@
 /* ============= */
-/*   Admin JS    */
+/*   Public JS   */
 /* ============= */
 
 jQuery(document).ready(function($) {
-
+    
 });

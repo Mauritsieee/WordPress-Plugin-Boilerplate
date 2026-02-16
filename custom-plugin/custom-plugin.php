@@ -5,41 +5,50 @@
  * Plugin Name:       Custom WordPress Plugin Boilerplate
  * Description:       Boilerplate for WordPress Plugins
  * Version:           1.0.0
- * Author:            MB Development
- * Author URI:        https://mb-dev.net/
- * 
+ * Author:            FFG
+ * Author URI:        https://fairfurnituregroup.com/
+ *
  */
 
 // ====================================
-//  If file is called directly, abort.
+// If file is called directly, abort.
 // ====================================
-if ( ! defined( 'WPINC' ) ) die;
-
+if (!defined('ABSPATH')) {
+    die;
+}
 
 define('CUSTOMPLUGIN', plugin_dir_path(__FILE__));
 define('CUSTOMPLUGIN_URL', plugin_dir_url(__FILE__));
 
-// ==============================
-// Require the main plugin class
-// ==============================
-require_once CUSTOMPLUGIN . 'inc/classes/class-starter.php';
+$plugin_data = get_file_data(__FILE__, ['Version' => 'Version']);
+define('CUSTOMPLUGIN_VERSION', $plugin_data['Version']);
 
-use CustomPlugin\Starter;
+define('CUSTOMPLUGIN_PREFIX', 'customplugin_');
 
-function run_custom_plugin() {
-    $custom_plugin = new Starter();
-    $custom_plugin->run();
-}
-
-run_custom_plugin();
 
 // ==============================
-// 
-// find-replace the following:
-// 
-// - custom_plugin
-// - CustomPlugin
-// - custom-plugin
-// - CUSTOMPLUGIN
-// 
+// Load plugin bootstrap
 // ==============================
+require_once CUSTOMPLUGIN . 'inc/Core/class-starter.php';
+
+// ==============================
+// Initialize plugin
+// ==============================
+\CustomPlugin\Starter::init();
+
+// ==============================
+// Activation hook
+// ==============================
+register_activation_hook(__FILE__, ['\CustomPlugin\Starter', 'activate']);
+
+
+/*
+|--------------------------------------------------------------------------
+| Find & Replace:
+|--------------------------------------------------------------------------
+| custom_plugin
+| CustomPlugin
+| custom-plugin
+| CUSTOMPLUGIN
+|--------------------------------------------------------------------------
+*/
