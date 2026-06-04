@@ -23,6 +23,7 @@ Designed to be lightweight, scalable, and easy to extend.
     └── inc/
         ├── Core/
         │   ├── class-starter.php
+        │   ├── class-dependencies.php
         │   ├── class-script-loader.php
         │   └── class-db.php
         │
@@ -88,3 +89,6 @@ Designed to be lightweight, scalable, and easy to extend.
 
 - **[16 February 2026]**  
   Major structural refinement: separated Core and Features architecture, implemented database versioning, automatic plugin version detection, improved asset handling, and finalized a clean, production-ready boilerplate foundation.
+  
+- **[4 June 2026]**  
+  Added dependencies core file.
