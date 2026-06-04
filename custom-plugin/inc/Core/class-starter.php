@@ -6,6 +6,7 @@ namespace CustomPlugin;
 // Plugin bootstrap – loads and initializes all core functionality
 // ================================================================
 
+require_once CUSTOMPLUGIN . 'inc/Core/class-dependencies.php';
 require_once CUSTOMPLUGIN . 'inc/Helpers/class-load-helpers.php';
 require_once CUSTOMPLUGIN . 'inc/Core/class-script-loader.php';
 require_once CUSTOMPLUGIN . 'inc/Core/class-db.php';
@@ -26,6 +27,7 @@ class Starter {
         // ==================
 
         Helpers::init();
+        Dependencies::init();
         ScriptLoader::init();
 
         // ==================
