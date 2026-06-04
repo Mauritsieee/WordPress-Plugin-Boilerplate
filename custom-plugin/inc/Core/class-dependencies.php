@@ -36,7 +36,7 @@ class Dependencies {
 	}
 
 	private static function get_current_plugin_name(): string {
-		$plugin_file = CUSTOMPLUGIN . 'gf-survey-export-addon.php';
+		$plugin_file = CUSTOMPLUGIN . 'custom-plugin.php';
 
 		if (function_exists('get_file_data')) {
 			$plugin_data = get_file_data($plugin_file, ['Name' => 'Plugin Name']);
