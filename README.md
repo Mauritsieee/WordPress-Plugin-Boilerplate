@@ -22,10 +22,11 @@ Designed to be lightweight, scalable, and easy to extend.
     │
     └── inc/
         ├── Core/
-        │   ├── class-starter.php
+        │   ├── class-db.php
         │   ├── class-dependencies.php
         │   ├── class-script-loader.php
-        │   └── class-db.php
+        │   ├── class-starter.php
+        │   └── class-updates.php
         │
         ├── Helpers/
         │   └── class-load-helpers.php

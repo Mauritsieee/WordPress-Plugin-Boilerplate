@@ -25,6 +25,12 @@ define('CUSTOMPLUGIN_VERSION', $plugin_data['Version']);
 
 define('CUSTOMPLUGIN_PREFIX', 'customplugin_');
 
+// ==============================
+// Load plugin bootstrap
+// ==============================
+define('CUSTOMPLUGIN_UPDATE_ENDPOINT', 'https://ffgportal.net/wp-updates/plugins/');
+define('CUSTOMPLUGIN_UPDATE_TOKEN', 'custom_plugin_update_token');
+
 
 // ==============================
 // Load plugin bootstrap

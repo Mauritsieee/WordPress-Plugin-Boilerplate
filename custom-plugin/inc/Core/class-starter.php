@@ -7,6 +7,7 @@ namespace CustomPlugin;
 // ================================================================
 
 require_once CUSTOMPLUGIN . 'inc/Core/class-dependencies.php';
+require_once CUSTOMPLUGIN . 'inc/Core/class-updates.php';
 require_once CUSTOMPLUGIN . 'inc/Helpers/class-load-helpers.php';
 require_once CUSTOMPLUGIN . 'inc/Core/class-script-loader.php';
 require_once CUSTOMPLUGIN . 'inc/Core/class-db.php';
@@ -17,7 +18,6 @@ require_once CUSTOMPLUGIN . 'inc/Core/class-db.php';
 
 require_once CUSTOMPLUGIN . 'inc/Features/custom-feature.php';
 
-
 class Starter {
 
     public static function init(): void {
@@ -27,6 +27,7 @@ class Starter {
         // ==================
 
         Helpers::init();
+        Updates::init();
         Dependencies::init();
         ScriptLoader::init();
 
