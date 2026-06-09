@@ -5,7 +5,8 @@ namespace CustomPlugin\Features;
 class Feature {
 
     public static function init(): void {
-        add_action('init', [self::class, 'success']);
+        add_action('wp_footer', [self::class, 'success']);
+        add_action('admin_footer', [self::class, 'success']);
     }
 
     public static function success(): void {
