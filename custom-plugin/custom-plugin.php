@@ -23,7 +23,7 @@ define('CUSTOMPLUGIN_URL', plugin_dir_url(__FILE__));
 $plugin_data = get_file_data(__FILE__, ['Version' => 'Version']);
 define('CUSTOMPLUGIN_VERSION', $plugin_data['Version']);
 
-define('CUSTOMPLUGIN_PREFIX', 'customplugin_');
+define('CUSTOMPLUGIN_PREFIX', 'custom_plugin_');
 
 // ==============================
 // Load plugin bootstrap
